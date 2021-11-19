@@ -281,12 +281,22 @@ html {
 }
 
 .heading-name {
-  font-size: 2.5em !important;
+  font-size: 1.8em !important;
   padding-left: 45px !important;
 }
 
 .main-name {
-  color: #d42222;
+  font-family: Nausea;
+  font-style: italic;
+  letter-spacing: 3px;
+  color: #fcfcfc;
+}
+
+.main-nameTech {
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 0.7em !important;
+  color: #fcfcfc;
 }
 
 .Typewriter__wrapper {
