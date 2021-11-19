@@ -10,8 +10,8 @@ import { ImBlog } from "react-icons/im";
 import {
   AiFillStar,
   AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  AiOutlineUser,
+  AiFillCar,
+  AiFillCrown,
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
@@ -55,7 +55,7 @@ function NavBar() {
           <Nav className="ml-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome style={{ marginBottom: "2px" }} /> Inicío
               </Nav.Link>
             </Nav.Item>
 
@@ -65,7 +65,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiFillCrown style={{ marginBottom: "2px" }} /> Sobre
               </Nav.Link>
             </Nav.Item>
 
@@ -75,10 +75,10 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
+                <AiFillCar
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projects
+                Novidades
               </Nav.Link>
             </Nav.Item>
 
@@ -88,7 +88,7 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Materiais
               </Nav.Link>
             </Nav.Item>
 
