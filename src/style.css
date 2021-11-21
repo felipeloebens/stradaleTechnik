@@ -8,7 +8,7 @@ html {
   --section-background-color: linear-gradient(
     to bottom left,
     rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.74)
+    rgba(24, 8, 8, 0.74)
   );
 
   --image-gradient: linear-gradient(
@@ -325,7 +325,7 @@ html {
   padding-top: 9em !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 500px) {
   .myAvtar {
     padding-top: 2em !important;
     padding-bottom: 2em !important;
@@ -398,9 +398,9 @@ html {
 }
 
 .home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
+  color: #9e2020;
+  box-shadow: 0 0 5px #9e2020;
+  text-shadow: 0 0 2px #9e2020;
 }
 
 .social-icons {
@@ -417,7 +417,7 @@ html {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  background-color: rgb(22, 4, 4);
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -457,7 +457,7 @@ html {
 }
 
 .blockquote-footer {
-  color: #a588c0 !important;
+  color: #b94444 !important;
 }
 /* --------- */
 /* Projects */
@@ -478,7 +478,7 @@ html {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  box-shadow: 0 4px 5px 3px rgba(187, 34, 34, 0.568) !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
@@ -488,7 +488,7 @@ html {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 4px 4px 5px rgba(236, 14, 14, 0.561) !important;
 }
 
 .blog-card {
@@ -501,7 +501,7 @@ html {
 
 .blog-card-view {
   background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
+  box-shadow: 0 3px 3px 2px rgba(194, 31, 31, 0.459) !important;
   color: white !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
@@ -519,7 +519,7 @@ html {
 .blog-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
+  box-shadow: 0 3px 3px 5px rgba(177, 45, 45, 0.65) !important;
 }
 
 .card-img-top {
@@ -573,12 +573,12 @@ html {
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  border: 1.7px solid rgba(231, 59, 59, 0.637) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
   display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  box-shadow: 4px 5px 4px 3px rgba(168, 4, 4, 0.137) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
 }
@@ -592,7 +592,7 @@ html {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  border: 2.2px solid rgba(218, 79, 79, 0.883) !important;
 }
 .tech-icon-images {
   padding: 20px !important;
@@ -663,14 +663,14 @@ html {
 .resume .resume-item {
   padding: 0 0 10px 25px;
   margin-top: -2px;
-  border-left: 2px solid #8a49a8;
+  border-left: 2px solid #a02f2f;
   position: relative;
 }
 
 .resume .resume-item .resume-title {
   line-height: 18px;
   font-size: 0.9em;
-  background: #5234795d;
+  background: #aa1e1e5d;
   padding: 8px 15px;
   display: inline-block;
   font-weight: 600;
@@ -700,7 +700,7 @@ html {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #8a49a8;
+  border: 2px solid #aa2f2f;
 }
 
 .like-item {
