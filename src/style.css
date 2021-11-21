@@ -54,23 +54,23 @@ html {
 /* --------- */
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 8px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #501919;
+  background: #300c0c;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(216, 121, 121, 0.959);
+  background: rgba(209, 52, 52, 0.959);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(235, 130, 130, 0.911);
+  background: rgba(240, 84, 84, 0.911);
   border-radius: 12px;
 }
 
@@ -78,9 +78,9 @@ html {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #000000d8 !important;
+  background-color: #4e4c4cd8 !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(29, 5, 5, 0.171) !important;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.171) !important;
   backdrop-filter: blur(15px) !important;
 }
 
@@ -100,7 +100,7 @@ html {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #000000 !important;
+  background-color: #292828 !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -147,7 +147,7 @@ html {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    background-color: #000000 !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
@@ -386,7 +386,7 @@ html {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #68187a;
+  background: #be1d1d;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -394,7 +394,7 @@ html {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
+  box-shadow: 0 0 15px #951f1f;
 }
 
 .home-social-icons:hover {
@@ -410,7 +410,7 @@ html {
 }
 
 .icon-colour {
-  color: #700c86 !important;
+  color: #c21919 !important;
 }
 
 /* --------- */
@@ -536,14 +536,14 @@ html {
 
 .btn-primary {
   color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  background-color: #ad2323 !important;
+  border-color: #991717 !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  background-color: #d81b1bd7 !important;
+  border-color: #c52020d7 !important;
 }
 .btn:focus {
   outline: none !important;
