@@ -1,4 +1,4 @@
-import React from "react";
+import React, (useState, useEffect) from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
@@ -14,15 +14,17 @@ import bitsOfCode from "../../Assets/Projects/blog.png";
 const token = "IGQVJYTTloTVRjWGNuQnpwSUN3SHdzaXE0SHpvejdCNnprbzNGTmJFRTZAYVDg5RjhrNjgwME56WWk4R1g1Unh1MV8wbmdqR3QycEU1T0lTdFpLUVg4Q1RaY1B5UGlORi0yclNFWXduLWhyM2Yxd3E5dwZDZD";
 const url = "https://graph.instagram.com/me/media?access_token=" + token + "&fields=media_url,media_type,caption,permalink";
 
-    $.get(url).then(function(response){
-    // console.log('retorno', response.data);
     
-    let dadosJson = response.data;
-    })
 
 function Projects() {
+  const [publicacoes, setPublicacoes] = useState([])
   
-
+  useEffect(() => {
+    const dadosJson = $.get(url).then(function(response){
+      return response.data;
+      })
+      setPublicacoes(dadosJson)
+  })
 
 
   return (
