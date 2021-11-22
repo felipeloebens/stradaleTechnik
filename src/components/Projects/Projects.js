@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import InstagramEmbed from 'react-instagram-embed';
+
 
 import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.jpeg";
@@ -14,19 +14,6 @@ import bitsOfCode from "../../Assets/Projects/blog.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
-      <InstagramEmbed
-          url='https://instagr.am/p/Zw9o4/'
-          clientAccessToken='123|456'
-          maxWidth={320}
-          hideCaption={false}
-          containerTagName='div'
-          protocol=''
-          injectScript
-          onLoading={() => {}}
-          onSuccess={() => {}}
-          onAfterRender={() => {}}
-          onFailure={() => {}}
-        />
       <Particle />
       <Container>
         <h1 className="project-heading">
