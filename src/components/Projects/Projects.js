@@ -35,7 +35,7 @@ const url = "https://graph.instagram.com/me/media?access_token=" + token + "&fie
         {publicacoes.map((publicacao) => 
           <Col  md={6} className="project-card">   
           <ProjectCard
-            key={publicacao.id}
+            keyId={publicacao.id}
             mediaType={publicacao.media_type}
             imgPath={publicacao.media_url}
             isBlog={false}

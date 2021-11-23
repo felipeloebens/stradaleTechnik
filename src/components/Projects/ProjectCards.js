@@ -5,10 +5,10 @@ import { BiLinkExternal } from "react-icons/bi";
 
 function ProjectCards(props) {
   return (
-    <Card className="project-card-view">
+    <Card key={props.keyId} className="project-card-view">
     {props.mediaType !== "VIDEO" ? 
     <Card.Img variant="top" src={props.imgPath} alt="card-img" /> : 
-    <video id={props.imgPath} style={{margin:"1.25rem"}}>
+    <video style={{margin:"1.25rem"}}>
        <source src= {props.imgPath} type="video/mp4"></source>
     </video>}
       <Card.Body>
