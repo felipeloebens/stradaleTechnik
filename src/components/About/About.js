@@ -1,10 +1,14 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Carousel } from "react-bootstrap";
 import Particle from "../Particle";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
+import aboutStradale from "../../Assets/aboutStradale.jpg";
+import aboutStradale1 from "../../Assets/aboutStradale1.jpg";
+import aboutStradale2 from "../../Assets/aboutStradale2.jpg";
+import aboutStradale3 from "../../Assets/aboutStradale3.jpg";
 import Toolstack from "./Toolstack";
+import Tilt from "react-parallax-tilt";
 
 function About() {
   return (
@@ -21,7 +25,7 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+            Sobre a <strong className="main-name-red"> STRADALE </strong> <span className="main-nameTech">TECHNIK</span> 
             </h1>
             <Aboutcard />
           </Col>
@@ -29,8 +33,50 @@ function About() {
             md={5}
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
-          >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+          > 
+            
+            <Carousel fade>
+                <Carousel.Item>
+                <Tilt>
+                  <img
+                    className="img-fluid"
+                    src={aboutStradale}
+                    alt="about"
+                  />
+                  </Tilt>
+                </Carousel.Item>
+
+                <Carousel.Item>
+                <Tilt>
+                  <img
+                    className="img-fluid"
+                    src={aboutStradale1}
+                    alt="about"
+                  />
+                  </Tilt>
+                </Carousel.Item>
+
+                <Carousel.Item>
+                <Tilt>
+                  <img
+                    className="img-fluid"
+                    src={aboutStradale2}
+                    alt="about"
+                  />
+                  </Tilt>
+                </Carousel.Item>
+              
+                <Carousel.Item>
+                <Tilt>
+                  <img
+                    className="img-fluid"
+                    src={aboutStradale3}
+                    alt="about"
+                  />
+                  </Tilt>
+                </Carousel.Item>
+            </Carousel>
+            
           </Col>
         </Row>
         <h1 className="project-heading">

@@ -10,31 +10,34 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
-            <br />I am a junior pursuing IMSC in Maths and Computing in BIT
-            Mesra.
+            Nosso conceito de trabalho surgiu a partir da busca de nossos clientes e amigos, por serviços de preparação automativa no segmento premium.
+            Sendo assim entregamos uma solução específica para cada tipo de veículo, marca, motorização, tração, câmbio e o pricipal que é
+            o <span className="purple"> perfil do nosso cliente.</span>
+            
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+           E sempre lembrando dos nossos parceiros que nos apoiam em cada projeto!
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Deus
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writting Tech Blogs
+              <ImPointRight /> Família
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Serrano Motorsport
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> ACB Engenharia Automativa
             </li>
           </ul>
 
-          <p style={{ marginBlockEnd: 0, color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+          <p style={{ marginBlockEnd: 0, color: "#d32121" }}>
+            "A melhor propaganda é o serviço!"{" "}
           </p>
           
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="main-nameTech">Alfredo Arnaldo Fockink</footer>
         </blockquote>
       </Card.Body>
     </Card>

@@ -29,7 +29,6 @@ const token = "IGQVJYTTloTVRjWGNuQnpwSUN3SHdzaXE0SHpvejdCNnprbzNGTmJFRTZAYVDg5Rj
         const intersectionObserver = new IntersectionObserver((entries) => {
 
           if(entries.some((entry) => entry.isIntersecting)){
-            console.log('elemento está visível');
             setCurrentPost((currentPostInsideState) => currentPostInsideState + 4);
           }
           

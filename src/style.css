@@ -292,6 +292,13 @@ html {
   color: #fcfcfc;
 }
 
+.main-name-red {
+  font-family: Nausea;
+  font-style: italic;
+  letter-spacing: 3px;
+  color: #d32121;
+}
+
 .main-nameTech {
   font-style: italic;
   letter-spacing: 1px;
