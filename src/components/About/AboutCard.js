@@ -10,7 +10,7 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Nosso conceito de trabalho surgiu a partir da busca de nossos clientes e amigos, por serviços de preparação automativa no segmento premium.
+            Nosso conceito de trabalho surgiu a partir da busca de nossos clientes e amigos, por serviços de preparação automotiva no segmento premium.
             Sendo assim entregamos uma solução específica para cada tipo de veículo, marca, motorização, tração, câmbio e o pricipal que é
             o <span className="purple"> perfil do nosso cliente.</span>
             
