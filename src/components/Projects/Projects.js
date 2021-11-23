@@ -4,22 +4,41 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import $ from 'jquery';
 
+
 const token = "IGQVJYTTloTVRjWGNuQnpwSUN3SHdzaXE0SHpvejdCNnprbzNGTmJFRTZAYVDg5RjhrNjgwME56WWk4R1g1Unh1MV8wbmdqR3QycEU1T0lTdFpLUVg4Q1RaY1B5UGlORi0yclNFWXduLWhyM2Yxd3E5dwZDZD";
-const url = "https://graph.instagram.com/me/media?access_token=" + token + "&fields=media_url,media_type,caption,permalink";
+
 
     function Projects() {
+      
       const [publicacoes, setPublicacoes] = useState([])
-  
+      const [currentPost, setCurrentPost] = useState(0)
+
+
       useEffect(() => {
         async function dadosApi() {
-          const resp = await $.get(url).then(function(response){
+          const resp = await $.get("https://graph.instagram.com/me/media?access_token=" + token + "&fields=media_url,media_type,caption,permalink&limit="+currentPost+"").then(function(response){
             return response.data;
             })
             setPublicacoes(resp)
         }
         dadosApi()
-      }, [])
+      }, [currentPost])
       console.log(publicacoes)
+
+      useEffect(() =>{
+        const intersectionObserver = new IntersectionObserver((entries) => {
+
+          if(entries.some((entry) => entry.isIntersecting)){
+            console.log('elemento está visível');
+            setCurrentPost((currentPostInsideState) => currentPostInsideState + 4);
+          }
+          
+        });
+
+        intersectionObserver.observe(document.querySelector('#sentinela'));
+
+        return () => intersectionObserver.disconnect();
+      }, [])
 
   return (
     <Container fluid className="project-section">
@@ -33,7 +52,7 @@ const url = "https://graph.instagram.com/me/media?access_token=" + token + "&fie
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
         {publicacoes.map((publicacao) => 
-          <Col  md={6} className="project-card">   
+          <Col key={publicacao.id}  md={6} className="project-card">   
           <ProjectCard
             keyId={publicacao.id}
             mediaType={publicacao.media_type}
@@ -43,8 +62,9 @@ const url = "https://graph.instagram.com/me/media?access_token=" + token + "&fie
             link={publicacao.permalink}
           />
         </Col>
-        )
-        }
+        )}
+        <Col id="sentinela"/>
+        
         </Row>
       </Container>
     </Container>
