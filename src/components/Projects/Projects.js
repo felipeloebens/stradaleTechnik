@@ -33,10 +33,10 @@ const url = "https://graph.instagram.com/me/media?access_token=" + token + "&fie
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          Acompanhe as <strong className="purple">Novidades </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Fique por dentro do nosso feed.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
         {publicacoes.map(publicacao => 
