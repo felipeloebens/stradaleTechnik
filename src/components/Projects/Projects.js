@@ -33,7 +33,7 @@ const url = "https://graph.instagram.com/me/media?access_token=" + token + "&fie
           return response.data;
           })
           setPublicacoes(dadosJson)
-      })
+      }, [])
 
       console.log(publicacoes);
   return (
