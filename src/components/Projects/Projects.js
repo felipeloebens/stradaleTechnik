@@ -25,17 +25,19 @@ const url = "https://graph.instagram.com/me/media?access_token=" + token + "&fie
     })
  */
     function Projects() {
-
       const [publicacoes, setPublicacoes] = useState([])
   
       useEffect(() => {
-        const dadosJson = $.get(url).then(function(response){
-          return response.data;
-          })
-          setPublicacoes(dadosJson)
+        async function dadosApi() {
+          const resp = await $.get(url).then(function(response){
+            return response.data;
+            })
+            setPublicacoes(resp)
+        }
+        dadosApi()
       }, [])
+      console.log(publicacoes)
 
-      console.log(publicacoes);
   return (
     
    
@@ -49,16 +51,18 @@ const url = "https://graph.instagram.com/me/media?access_token=" + token + "&fie
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              link="https://github.com/soumyajit4419/Plant_AI"
-            />
-          </Col>
+        {publicacoes.map(publicacao => 
+          <Col md={4} className="project-card">   
+          <ProjectCard
+            imgPath={publicacao.media_url}
+            isBlog={false}
+            title="FELIPE MASSA"
+            description={publicacao.caption}
+            link={publicacao.permalink}
+          />
+        </Col>
+        )}
+          
 
 {/*           <Col md={4} className="project-card">
             <ProjectCard
