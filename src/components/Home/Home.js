@@ -5,7 +5,7 @@ import Home2 from "./Home2";
 import Type from "./Type";
 import logoSerrano from "../../Assets/SerranoLogo.png";
 import logoACB from "../../Assets/ACBEng.png";
-import Tilt from "react-parallax-tilt";
+
 
 function Home() {
   return (
