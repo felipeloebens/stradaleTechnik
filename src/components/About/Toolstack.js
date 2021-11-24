@@ -10,10 +10,10 @@ function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <img alt="Bflash" src={logoBflash} height="120%"/> 
+        <img alt="Bflash" src={logoBflash} style={{ width: "110px"}}/> 
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <img alt="Dim" src={Dimsport} width="100%"/> 
+        <img alt="Dim" src={Dimsport}  style={{ width: "110px"}}/> 
       </Col>
     </Row>
   );

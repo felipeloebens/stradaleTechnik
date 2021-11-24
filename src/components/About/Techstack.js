@@ -8,10 +8,10 @@ function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-          <img alt="Serrano" src={logoSerrano} width="100%" /> 
+          <img alt="Serrano" src={logoSerrano} style={{ width: "120px"}} /> 
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-          <img alt="ACB" src={logoACB} width="100%" style={{ marginTop: "25%"}}/> 
+          <img alt="ACB" src={logoACB} style={{ marginTop: "5%", width: "120px"}}/> 
       </Col>
     </Row>
   );
