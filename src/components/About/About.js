@@ -79,14 +79,16 @@ function About() {
             
           </Col>
         </Row>
+        <Col>
+        </Col>
         <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+          Nossos <strong className="purple">Parceiros </strong>
         </h1>
 
         <Techstack />
 
         <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
+          <strong className="purple">Nossas </strong> Ferramentas
         </h1>
         <Toolstack />
       </Container>
