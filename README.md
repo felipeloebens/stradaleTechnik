@@ -3,14 +3,14 @@
   <a href="https://stradaletechnik.netlify.app/" target="_blank">Acesse o site 🔗</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="./Images/stradaleExample.png" />
+  <img alt="Demo" src="./Images/readmeSite.png" />
 </div>
 
 <br/>
 
 ## O Projeto
 
-This project was built using these technologies.
+Este projeto teve como objetivo apresentar o portfólio dos meus trabalhos no ramo automotivo,  praticar o uso das seguintes tecnologias:
 
 - React.js
 - Node.js
@@ -19,35 +19,22 @@ This project was built using these technologies.
 - VsCode
 - Vercel
 
-## Features
+Usando o template que encontrei no GitHub do Soumyajit Behera, além do conteúdo estático e características da minha marca, fiz a integração com página do instagram @stradale.technik. Esta integração é feita através da API fornecida pelo Facebook Developers e faz a aquisição de 4 publicações por vez, e cada vez que o scroll chega ao final da página são requisitadas mais 4 publicações.
 
-**📖 Multi-Page Layout**
+## Template
 
-**🎨 Styled with React-Bootstrap and Css with easy to customize colors**
+Características que gostei do template:
 
-**📱 Fully Responsive**
+- 📖 Layout multi página
+- 🎨 Estilizado com Reat-Bootstrap e Css de fácil customização de cores
+- 📱 Totalmente responsivo
 
-## Getting Started
+Thanks Soumyajit Behera!
 
-Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
+## 🛠 Instalação e Configuração
 
-## 🛠 Installation and Setup Instructions
+1. Instalação: `npm install`
 
-1. Installation: `npm install`
+2. Para o rodar o projeto: `npm start`
 
-2. In the project directory, you can run: `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-The page will reload if you make edits.
-
-## Usage Instructions
-
-Open the project folder and Navigate to `/src/components/`. <br/>
-You will find all the components used and you can edit your information accordingly.
-
-### Show your support
-
-Give a ⭐ if you like this website!
-
-<a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
+Após rodar basta acessar pelo navegador http://localhost:3000.
