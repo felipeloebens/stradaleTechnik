@@ -5,9 +5,6 @@ import Particle from "../Particle";
 import $ from 'jquery';
 
 
-const token = "IGQVJYSUdoZAnhuaC1wRVlmajctbm1MR3BzU3ZAodXdiVzlQRVFPSXBGdVRldHJHRmxkMWVKRlpsM2NRS1ZAFNjZAhTjJHRGstUDFhUndHUGxTZAkQ3amxsLWVSaHMzRDdLeW1HbEpQY1B2MkN5c0NCTkRsMAZDZD";
-
-
     function Projects() {
       
       const [publicacoes, setPublicacoes] = useState([])
@@ -16,7 +13,8 @@ const token = "IGQVJYSUdoZAnhuaC1wRVlmajctbm1MR3BzU3ZAodXdiVzlQRVFPSXBGdVRldHJHR
 
       useEffect(() => {
         async function dadosApi() {
-          const resp = await $.get("https://graph.instagram.com/me/media?access_token=" + token + "&fields=media_url,media_type,caption,permalink&limit="+currentPost+"").then(function(response){
+          const resp = await $.get("https://graph.instagram.com/me/media?access_token=" + process.env.REACT_APP_API_TOKEN + 
+          "&fields=media_url,media_type,caption,permalink&limit="+currentPost+"").then(function(response){
             return response.data;
             })
             setPublicacoes(resp)
