@@ -10,8 +10,15 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import TagManager from 'react-gtm-module'
 
 import ScrollToTop from "./components/ScrollToTop";
+
+
+const tagManagerArgs = {
+  gtmId: 'AW-11069820812'
+}
+TagManager.initialize(tagManagerArgs)
 
 function App() {
   const [load, upadateLoad] = useState(true);
