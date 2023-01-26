@@ -1,6 +1,6 @@
 <h2 align="center">
   Stradale Technik Website <br/>
-  <a href="https://stradaletechnik.netlify.app/" target="_blank">Acesse o site 🔗</a>
+  <a href="https://stradale-technik.com/" target="_blank">Acesse o site 🔗</a>
 </h2>
 <div align="center">
   <img alt="Demo" src="./Images/readmeSite.png" />
