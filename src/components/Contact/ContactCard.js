@@ -1,6 +1,7 @@
 import React, {useState, useRef } from "react";
 import { Card, Col, Button, Form, Row } from "react-bootstrap";
 import emailjs from '@emailjs/browser'
+import { RiMailSendLine } from 'react-icons/ri';
 
 function ContactCard() {
 
@@ -37,24 +38,23 @@ function ContactCard() {
       e.preventDefault();
       e.stopPropagation();
     }
-    setValidated(true);
-    emailjs.sendForm(process.env.REACT_APP_SERVICE_MAIL_ID, process.env.REACT_APP_TEMPLATE_ID_MAIL, form, process.env.REACT_APP_PUBLIC_KEY_MAIL)
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-      e.target.reset();
-
+    
+    
+    if((name !== '' && phoneNumber !== '' && message !== '')){
+      setValidated(true);
+      emailjs.sendForm(process.env.REACT_APP_SERVICE_MAIL_ID, process.env.REACT_APP_TEMPLATE_ID_MAIL, form, process.env.REACT_APP_PUBLIC_KEY_MAIL)
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+      }
   };
-
-
-
 
   return (
     <Card bg={'transparent'} style={{alignItems: 'center', justifyContent: 'center', marginBottom: '80px'}}>
       <Card.Header style={{marginBottom: '30px'}}> Se tem alguma dúvida ou solicitação de orçamento não hesite em em nos contatar!</Card.Header>
-      <Form noValidate validated={validated} ref={form} onSubmit={sendEmail}>
+      <Form validated={validated} ref={form} onSubmit={sendEmail}>
       <Row style={{marginBottom: '15px'}}>
         <Form.Group as={Col} md="6" controlId="validationCustom01">
           <Form.Label>Nome</Form.Label>
@@ -89,14 +89,14 @@ function ContactCard() {
         <Form.Control 
           as="textarea" 
           name="message"
-          rows={5} 
+          rows={8} 
           value={message}
           onChange={handleChangeMessage}
           />
         <Form.Control.Feedback>Mensagem ok!</Form.Control.Feedback>
       </Form.Group>
       </Row>
-      <Button type="submit" value="Send">Enviar</Button>
+      <Button type="submit" value="Send">Enviar <RiMailSendLine/></Button>
     </Form>
     </Card>
   );
