@@ -9,6 +9,7 @@ import {
   AiOutlineHome,
   AiFillCar,
   AiFillCrown,
+  AiOutlineMessage,
 } from "react-icons/ai";
 
 
@@ -78,18 +79,18 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-{/*             <Nav.Item>
+            <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/resume"
+                to="/contact"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Materiais
+                <AiOutlineMessage
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                Contato
               </Nav.Link>
-            </Nav.Item> */}
-
-
-
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>
